@@ -13,9 +13,10 @@ public class InfixToPostfix {
     // E: Empty the stack at the end.
 
     public static void main(String[] args) {
-        String infix = "A+B*C-D/E^F";
+        String infix = "1+2*3-4/4^1";
         System.out.println("Infix is : " + infix);
-        System.out.println("Postfix is : " + conversion(infix));
+        String Postfix = conversion(infix);
+        System.out.println("Postfix is : " + Postfix);
     }
 
     private static String conversion(String s) {
