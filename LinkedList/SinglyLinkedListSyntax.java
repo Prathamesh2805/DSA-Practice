@@ -40,7 +40,7 @@ public class SinglyLinkedListSyntax {
             }
         }
 
-        public void addAtBegining(int data) {
+        public void addAtBeginning(int data) {
             Node myNode = new Node(data);
             if (head == null) {
                 head = myNode;
@@ -52,7 +52,7 @@ public class SinglyLinkedListSyntax {
 
         public void addAtPosition(int data, int position){
             if(head == null){
-                addAtBegining(data);
+                addAtBeginning(data);
                 return;
             }
             Node myNode = new Node(data);
@@ -76,8 +76,8 @@ public class SinglyLinkedListSyntax {
         myLL.display();
         System.out.println();
 
-        myLL.addAtBegining(9);
-        myLL.addAtBegining(8);
+        myLL.addAtBeginning(9);
+        myLL.addAtBeginning(8);
         myLL.addAtEnd(50);
 
         myLL.display();

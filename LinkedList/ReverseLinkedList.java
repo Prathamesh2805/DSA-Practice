@@ -1,7 +1,8 @@
 package LinkedList;
 
 public class ReverseLinkedList {
-    static class Node {
+
+    static public class Node {
         int data;
         Node next;
 
