@@ -2,28 +2,6 @@ package LinkedList;
 
 public class SinglyLinkedListSyntax {
 
-    public static void main(String[] args) {
-        LinkedList myLL = new LinkedList();
-        myLL.addAtEnd(10);
-        myLL.addAtEnd(20);
-        myLL.addAtEnd(30);
-        myLL.addAtEnd(40);
-
-        myLL.display();
-        System.out.println();
-
-        myLL.addAtBegining(9);
-        myLL.addAtBegining(8);
-        myLL.addAtEnd(50);
-
-        myLL.display();
-        System.out.println();
-
-        myLL.addAtPosition(90, 2);
-        myLL.display();
-
-    }
-
     public static class Node {
         int data;
         Node next;
@@ -87,5 +65,26 @@ public class SinglyLinkedListSyntax {
             myNode.next = temp.next;
             temp.next = myNode;
         }
+    }
+    public static void main(String[] args) {
+        LinkedList myLL = new LinkedList();
+        myLL.addAtEnd(10);
+        myLL.addAtEnd(20);
+        myLL.addAtEnd(30);
+        myLL.addAtEnd(40);
+
+        myLL.display();
+        System.out.println();
+
+        myLL.addAtBegining(9);
+        myLL.addAtBegining(8);
+        myLL.addAtEnd(50);
+
+        myLL.display();
+        System.out.println();
+
+        myLL.addAtPosition(90, 2);
+        myLL.display();
+
     }
 }
