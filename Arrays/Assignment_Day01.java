@@ -2,9 +2,9 @@ package Arrays;
 public class Assignment_Day01 {
 
 	public static void main(String[] args) {
-		System.out.println("-----------------Reverse an array in place------------------");
+		System.out.println("------Reverse an array in place------");
 
-		int nums[] = { 1, 2, 3, 4, 5, 6 };
+		int[] nums = { 1, 2, 3, 4, 5, 6 };
 
 		for (int i = 0; i < nums.length; i++) {
 			System.out.print(nums[i]);
@@ -19,12 +19,12 @@ public class Assignment_Day01 {
 			System.out.print(nums[i]);
 		}
 		System.out.println();
-		
-		
-		System.out.println("-----------------Rotate an array by k elements------------------");
 
 
-		int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		System.out.println("----Rotate an array by k elements----");
+
+
+		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
 		int n = arr.length;
 		int k = 2;
 		k = k % n;
@@ -40,7 +40,7 @@ public class Assignment_Day01 {
 		left = k;
 		right = n - 1;
 		reverse(arr, left, right);
-	
+
 		left = 0;
 		right = k - 1;
 		reverse(arr, left, right);
@@ -49,9 +49,9 @@ public class Assignment_Day01 {
 			System.out.print(arr[i]);
 		}
 		System.out.println();
-		
 
-		System.out.println("-----------------Transpose of matrix-----------------");
+
+		System.out.println("---------Transpose of matrix---------");
 
 		int[][] array = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
